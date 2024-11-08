@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/ico"
+        android:src="@drawable/welcome"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ico"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Have a best community experience"
+            android:textColor="@color/material_dynamic_neutral60"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create an account"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:id="@+id/signup"
+            android:fontFamily="@font/nunitobold"
+            android:background="@drawable/button_orange"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Log In"
+            android:textColor="@color/orange"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:id="@+id/login"
+            android:fontFamily="@font/nunitobold"
+            android:background="@drawable/button_white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

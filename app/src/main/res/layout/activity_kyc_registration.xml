@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".KYC_Registration">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KYC Upload - ID Proof"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitobold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Document Type"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitobold"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIMC card"
+                    android:id="@+id/txt_NIMC"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/corner_light_orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drivers License"
+                    android:id="@+id/txt_DriversLicense"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/corner_light_orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passport"
+                    android:id="@+id/txt_Passport"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/corner_light_orange"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload ID Proof"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitobold"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take a picture of your ID, both front and back. Place the ID on a black background and ensure all corners of your document are visible"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitomedium"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/front_camera"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/space"
+                    android:background="@drawable/edittext">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/camera"
+                        app:tint="@color/orange" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/nunitomedium"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/space"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/back_camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/space"
+                    android:background="@drawable/edittext">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/camera"
+                        app:tint="@color/orange" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/nunitomedium"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/img_front"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/space2"/>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/space2"
+                    android:layout_centerInParent="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/img_back"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/space2"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_orange"
+                android:id="@+id/next"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunitomedium"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

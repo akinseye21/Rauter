@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".JoinCommunity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/anim"
+        android:layout_marginTop="10dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="1"
+        app:lottie_fileName="animation.json"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join a community\nto begin sharing and\n joining a ride"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitobold"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button_orange"
+        android:id="@+id/joinCommunity"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Join a community"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunitomedium"/>
+
+
+
+</RelativeLayout>
