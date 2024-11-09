@@ -8,64 +8,92 @@
     android:background="@color/white"
     tools:context=".Dashboard">
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager"
-        android:layout_marginBottom="65dp">
-    </androidx.viewpager.widget.ViewPager>
+        android:id="@+id/drawer_layout">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        app:tabGravity="fill"
-        app:tabIndicatorHeight="4dp"
-        app:tabIndicatorFullWidth="false"
-        app:tabIndicatorAnimationMode="elastic"
-        app:tabInlineLabel="false"
-        app:tabBackground="@drawable/corner_popup"
-        app:tabIndicatorColor="@color/orange"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/orange"
-        app:tabIconTint="#707070"
-        app:tabTextAppearance="@style/TabText" />
-
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_margin="20dp"
-        android:padding="5dp"
-        android:id="@+id/menu"
-        android:background="@drawable/button_orange"
-        android:src="@drawable/menu" />
-
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_margin="20dp"
-        android:padding="5dp"
-        android:layout_below="@+id/menu"
-        android:id="@+id/notification"
-        android:background="@drawable/circle1"
-        android:src="@drawable/notification" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:padding="10dp"
-        android:background="@drawable/circle_white"
-        android:id="@+id/wallet"
-        android:src="@drawable/wallet"
-        app:tint="@color/orange" />
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_marginBottom="65dp">
+            </androidx.viewpager.widget.ViewPager>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="4dp"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabInlineLabel="false"
+                app:tabBackground="@drawable/corner_popup"
+                app:tabIndicatorColor="@color/orange"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/orange"
+                app:tabIconTint="#707070"
+                app:tabTextAppearance="@style/TabText" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:id="@+id/menu"
+                android:background="@drawable/button_orange"
+                android:src="@drawable/menu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:layout_below="@+id/menu"
+                android:id="@+id/notification"
+                android:background="@drawable/circle1"
+                android:src="@drawable/notification" />
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:padding="10dp"
+                android:background="@drawable/circle_white"
+                android:id="@+id/wallet"
+                android:src="@drawable/wallet"
+                app:tint="@color/orange" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_gravity="start">
+
+            <!-- Custom drawer items will be added here dynamically -->
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
 
 </RelativeLayout>
