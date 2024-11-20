@@ -3,12 +3,664 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="50dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
     tools:context=".fragment.CommunityFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Community"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitosemibold"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_speed="1"
+                app:lottie_fileName="arrowdown.json"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gwagwalada Community"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitobold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 members"
+                android:textSize="12dp"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/material_dynamic_tertiary70"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#DFE1E5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_alignParentStart="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/nunitoblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Post(s)"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/nunitosemibold"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/nunitoblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Members"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/nunitosemibold"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#DFE1E5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Rides in your community"
+                    android:textSize="20dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/nunitobold"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:background="@drawable/corner_white"
+                    android:layout_marginTop="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="148dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/car1"
+                                android:layout_marginBottom="10dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/profile"
+                                    android:layout_marginRight="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Emmanuel"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/nunitolight"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gwags Junction"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/nunitolight"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lugbe FHA"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="148dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/car2"
+                                android:layout_marginBottom="10dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/profile"
+                                    android:layout_marginRight="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Joseph"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/nunitolight"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gwags Hospital"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/nunitolight"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wuse Market"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="148dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/car3"
+                                android:layout_marginBottom="10dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/profile"
+                                    android:layout_marginRight="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Godstime"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/nunitolight"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Checkpoint"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/nunitolight"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Asokoro"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="148dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/car2"
+                                android:layout_marginBottom="10dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/profile"
+                                    android:layout_marginRight="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Joseph"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/nunitolight"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gwags Hospital"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/nunitolight"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wuse Market"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="148dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/car1"
+                                android:layout_marginBottom="10dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/profile"
+                                    android:layout_marginRight="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Emmanuel"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/nunitolight"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/black"
+                                android:layout_margin="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gwags Junction"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/nunitolight"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lugbe FHA"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunitomedium"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Communities"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/nunitobold"/>
+            <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="148dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_white"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Abaji Community"
+                        android:textColor="#1F2937"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunitosemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 members"
+                        android:textColor="#6B7280"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/nunitolight"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="148dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_white"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wuse Community"
+                        android:textColor="#1F2937"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunitosemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 members"
+                        android:textColor="#6B7280"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/nunitolight"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="148dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_white"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurudu Community"
+                        android:textColor="#1F2937"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunitosemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 members"
+                        android:textColor="#6B7280"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/nunitolight"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="148dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_white"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gwarimpa Community"
+                        android:textColor="#1F2937"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunitosemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 members"
+                        android:textColor="#6B7280"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/nunitolight"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="148dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_white"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asokoro Community"
+                        android:textColor="#1F2937"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunitosemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 members"
+                        android:textColor="#6B7280"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/nunitolight"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

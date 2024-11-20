@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/back"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunitomedium"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/profile_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="Username User"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitobold"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="user@gmail.com"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/createride"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_rides"
+                    app:tint="@color/orange"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Ride"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/orange"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/joinride"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/join"
+                    app:tint="@color/orange"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join Ride"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/orange"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/message"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/messages"
+                    app:tint="@color/orange"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messages"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/orange"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rating"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    app:tint="@color/orange"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Rating"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/orange"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/logout"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/logout"
+                    app:tint="@color/orange"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitolight"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

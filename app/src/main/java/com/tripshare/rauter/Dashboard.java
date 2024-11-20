@@ -3,13 +3,18 @@ package com.tripshare.rauter;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -30,12 +35,15 @@ public class Dashboard extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
     ImageView menu;
+    DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        menu = findViewById(R.id.menu);
+        drawerLayout = findViewById(R.id.drawer_layout);
         //view pager and tab layout
         viewPager = findViewById(R.id.viewpager);
         addTabs(viewPager);
@@ -60,6 +68,31 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        // Inflate the side menu layout into the container
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View sideMenu = inflater.inflate(R.layout.side_menu_layout, findViewById(R.id.drawer_items_layout), false);
+        ((LinearLayout) findViewById(R.id.drawer_items_layout)).addView(sideMenu);
+        // Find the views in the side menu layout
+        LinearLayout back = sideMenu.findViewById(R.id.back);
+        ImageView profile_img = sideMenu.findViewById(R.id.profile_img);
+        TextView name = sideMenu.findViewById(R.id.name);
+        TextView sideemail = sideMenu.findViewById(R.id.email);
+        LinearLayout createride = sideMenu.findViewById(R.id.createride);
+        LinearLayout joinride = sideMenu.findViewById(R.id.joinride);
+        LinearLayout messgae = sideMenu.findViewById(R.id.message);
+        LinearLayout rating = sideMenu.findViewById(R.id.rating);
+        LinearLayout logout = sideMenu.findViewById(R.id.logout);
+
+
+        // Set up the button to open the drawer
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!drawerLayout.isDrawerOpen(findViewById(R.id.drawer_items_layout))) {
+                    drawerLayout.openDrawer(findViewById(R.id.drawer_items_layout));
+                }
+            }
+        });
 
     }
 
